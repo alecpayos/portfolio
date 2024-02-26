@@ -10,7 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: cd src && npm ci && npm run build
-      - run: cp -R out/* ../release/out/
+      - run: ls
+      - run: cp -R ./out/* ../release/out/
       - run: cd ../
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
