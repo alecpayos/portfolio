@@ -4,11 +4,12 @@ import icons8PhoneIcon from './misc/icons8-phone.svg'
 import linkedinIcon from './misc/linkedin-icon.svg'
 import chainLinkIcon from './misc/chain-link-icon.svg'
 
-import grabADrinkPreviewIcon from './project-previews/grab-a-drink-preview.png'
-import ohifCustomMprPreviewIcon from './project-previews/ohif-custom-mpr-preview.png'
-import ohifWorklistPreviewIcon from './project-previews/ohif-worklist-preview.png'
-import resumePreviewIcon from './project-previews/resume-preview.png'
-import speccupPreivewIcon from './project-previews/speccup-preivew.png'
+import grabADrinkPreview from './project-previews/grab-a-drink-preview.png'
+import ohifCustomMprPreview from './project-previews/ohif-custom-mpr-preview.png'
+import ohifWorklistPreview from './project-previews/ohif-worklist-preview.png'
+import resumePreview from './project-previews/resume-preview.png'
+import coverLetterPreview from './project-previews/resume-preview.png'
+import speccupPreivew from './project-previews/speccup-preivew.png'
 
 import antDesignIcon from './tech-stack-icons/ant-design.svg'
 import appleIcon from './tech-stack-icons/apple.svg'
@@ -46,50 +47,90 @@ import typescriptIcon from './tech-stack-icons/typescript-icon.svg'
 import ubuntuIcon from './tech-stack-icons/ubuntu.svg'
 import vueIcon from './tech-stack-icons/vue.svg'
 
-export {
-    googleIcon,
-    googleMapsIcon,
-    icons8PhoneIcon,
-    linkedinIcon,
-    chainLinkIcon,
-    grabADrinkPreviewIcon,
-    ohifCustomMprPreviewIcon,
-    ohifWorklistPreviewIcon,
-    resumePreviewIcon,
-    speccupPreivewIcon,
-    antDesignIcon,
-    appleIcon,
-    awsApiGatewayIcon,
-    awsCloudformationIcon,
-    awsCloudfrontIcon,
-    awsCloudwatchIcon,
-    awsEc2Icon,
-    awsIamIcon,
-    awsRdsIcon,
-    awsS3Icon,
-    awsIcon,
-    bitbucketIcon,
-    bootstrapIcon,
-    cssIcon,
-    figmaIcon,
-    flaskIcon,
-    gitIcon,
-    githubIcon,
-    gitlabIcon,
-    htmlIcon,
-    laravelIcon,
-    materialUiIcon,
-    microsoftWindowsIcon,
-    mysqlIcon,
-    nextjsIcon,
-    nginxIcon,
-    phpIcon,
-    postgresqlIcon,
-    pythonIcon,
-    reactIcon,
-    slackIcon,
-    trelloIcon,
-    typescriptIcon,
-    ubuntuIcon,
-    vueIcon
+const misc = {
+    googleIcon: { icon: googleIcon, alt: "Google Email Icon"},
+    googleMapsIcon: { icon: googleMapsIcon, alt: "Google Maps Icon"},
+    icons8PhoneIcon: { icon: icons8PhoneIcon, alt: "Contact Phone Icon"},
+    linkedinIcon: { icon: linkedinIcon, alt: "LinkedIn Icon"},
+    chainLinkIcon: { icon: chainLinkIcon, alt: "Chain Link Icon"},
 }
+
+const projectPreviews = {
+    grabADrinkPreview: { preview: grabADrinkPreview, alt: "Grab A Drink Project Preview"},
+    ohifCustomMprPreview: { preview: ohifCustomMprPreview, alt: "OHIF Custom MPR Project Preview"},
+    ohifWorklistPreview: { preview: ohifWorklistPreview, alt: "OHIF Worklist Project Preview"},
+    resumePreview: { preview: resumePreview, alt: "Resume"},
+    coverLetterPreview: { preview: coverLetterPreview, alt: "Cover Letter"},
+    speccupPreivew: { preview: speccupPreivew, alt: "SpeccUp Project Preview"},
+}
+
+const languageAndFrameworksIcons = {
+    htmlIcon: { icon: htmlIcon, alt: "HTML 5", link: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+    nextjsIcon: { icon: nextjsIcon, alt: "NextJS 14", link: "https://nextjs.org/" },
+    nginxIcon: { icon: nginxIcon, alt: "NGINX", link: "https://www.nginx.com/" },
+    reactIcon: { icon: reactIcon, alt: "ReactJS", link: "https://react.dev/" },
+    vueIcon: { icon: vueIcon, alt: "VueJS", link: "https://vuejs.org/" },
+
+    flaskIcon: { icon: flaskIcon, alt: "Flask", link: "https://flask.palletsprojects.com/en/3.0.x/" },
+    laravelIcon: { icon: laravelIcon, alt: "Laravel 10", link: "https://laravel.com/" },
+    phpIcon: { icon: phpIcon, alt: "PHP", link: "https://www.php.net/" },
+    pythonIcon: { icon: pythonIcon, alt: "Python", link: "https://www.python.org/" },
+    typescriptIcon: { icon: typescriptIcon, alt: "TypeScript", link: "https://www.typescriptlang.org/" },
+}
+
+const awsIcons = {
+    awsCloudfrontIcon: { icon: awsCloudfrontIcon, alt: "AWS CloudFront", link: "https://aws.amazon.com/cloudfront/" },
+    awsEc2Icon: { icon: awsEc2Icon, alt: "AWS EC2", link: "https://aws.amazon.com/pm/ec2/" },
+    awsIamIcon: { icon: awsIamIcon, alt: "AWS IAM", link: "https://aws.amazon.com/iam/" },
+    awsRdsIcon: { icon: awsRdsIcon, alt: "AWS RDS", link: "https://aws.amazon.com/free/database/" },
+    awsS3Icon: { icon: awsS3Icon, alt: "AWS S3", link: "https://aws.amazon.com/pm/serv-s3/" },
+    awsApiGatewayIcon: { icon: awsApiGatewayIcon, alt: "AWS API Gateway", link: "https://aws.amazon.com/api-gateway/" },
+    awsCloudformationIcon: { icon: awsCloudformationIcon, alt: "AWS Cloud Formation", link: "https://aws.amazon.com/cloudformation/" },
+    awsCloudwatchIcon: { icon: awsCloudwatchIcon, alt: "AWS CloudWatch", link: "https://aws.amazon.com/cloudwatch/" },
+    awsIcon: { icon: awsIcon, alt: "AWS", link: "https://aws.amazon.com/free/" },
+}
+
+const versionControlIcons = {
+    bitbucketIcon: { icon: bitbucketIcon, alt: "Bitbucket", link: "https://bitbucket.org/product" },
+    gitIcon: { icon: gitIcon, alt: "Git CLI", link: "https://git-scm.com/" },
+    githubIcon: { icon: githubIcon, alt: "Github", link: "https://github.com/" },
+    gitlabIcon: { icon: gitlabIcon, alt: "Gitlab", link: "https://about.gitlab.com/" },
+}
+
+const designFrameworksIcons = {
+    antDesignIcon: { icon: antDesignIcon, alt: "Ant Design", link: "https://ant.design/" },
+    bootstrapIcon: { icon: bootstrapIcon, alt: "Bootstrap 5", link: "https://getbootstrap.com/docs/5.3/getting-started/introduction/" },
+    cssIcon: { icon: cssIcon, alt: "CSS 3", link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+    materialUiIcon: { icon: materialUiIcon, alt: "MaterialUI", link: "https://mui.com/" },
+}
+
+const databaseIcons = {
+    mysqlIcon: { icon: mysqlIcon, alt: "MySQL", link: "https://www.mysql.com/" },
+    postgresqlIcon: { icon: postgresqlIcon, alt: "PostgreSQL", link: "https://www.postgresql.org/" },
+}
+
+const projectManagementIcons = {
+    figmaIcon: { icon: figmaIcon, alt: "Figma", link: "https://www.figma.com/" },
+    slackIcon: { icon: slackIcon, alt: "Slack", link: "https://slack.com/" },
+    trelloIcon: { icon: trelloIcon, alt: "Trello", link: "https://trello.com/" },
+}
+
+const operatingSystemIcons = {
+    appleIcon: { icon: appleIcon, alt: "MacOS Icon", link: "https://www.apple.com/ph/macos/sonoma/" },
+    microsoftWindowsIcon: { icon: microsoftWindowsIcon, alt: "Windows", link: "https://www.microsoft.com/en-ph/windows?r=1" },
+    ubuntuIcon: { icon: ubuntuIcon, alt: "Ubuntu", link: "https://ubuntu.com/" },
+}
+
+const Icons = {
+    misc,
+    projectPreviews,
+    languageAndFrameworksIcons,
+    awsIcons,
+    versionControlIcons,
+    designFrameworksIcons,    
+    databaseIcons,
+    projectManagementIcons,
+    operatingSystemIcons
+}
+
+export default Icons
