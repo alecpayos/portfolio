@@ -10,8 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: cd src && npm ci && npm run build
-      - run: ls src
-      - run: cp -R src/out/* ../release/out/
+      - run: cp -R src/out/* release/out/
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
