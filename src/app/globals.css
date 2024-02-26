@@ -17,7 +17,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #D9D9D9;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -29,5 +29,13 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .screen-primary {
+    background-color: #1D1D21;
+  }
+
+  .screen-secondary {
+    background-color: #35353C;
   }
 }
