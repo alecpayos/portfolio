@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: cd src && npm run lint
       - run: cd src && npm ci && npm run build
       - run: mkdir release/out && cp -R src/out/* release/out/
       - uses: FirebaseExtended/action-hosting-deploy@v0
