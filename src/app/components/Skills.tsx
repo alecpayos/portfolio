@@ -24,8 +24,8 @@ const SectionCategory = ({ iconObjects }: any) => {
 
   return (
     <div className={`grid grid-cols-${length} gap-4`}>
-      {icons.map(({ icon, alt, link }: any) => {
-        return <Card icon={icon} alt={alt} link={link} />
+      {icons.map(({ icon, alt, link }: any, index: number) => {
+        return <Card key={index} icon={icon} alt={alt} link={link} />
       })}
     </div>
   )
@@ -42,9 +42,9 @@ const SkillSections = () => {
     { iconObject: Icons.operatingSystemIcons, header: 'Operating Systems'},
   ]
 
-  return sectionHeaders.map(({ iconObject, header }) => {
+  return sectionHeaders.map(({ iconObject, header }, index: number) => {
     return (
-      <section className="flex flex-col items-center mt-12">
+      <section key={index} className="flex flex-col items-center mt-12">
         <h1 className='text-2xl font-medium mb-8'>{header}</h1>
         <SectionCategory iconObjects={iconObject} />
       </section>
