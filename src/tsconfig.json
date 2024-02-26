@@ -28,6 +28,7 @@
     }
   },
   "include": [
+    "app/props.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
