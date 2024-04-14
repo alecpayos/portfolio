@@ -6,13 +6,14 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  safelist: [
-    {
-      pattern: /grid-cols-./,
-    }
-  ],
   theme: {
     extend: {
+      screens: {
+        '3xs': '320px',
+        '2xs': '375px',
+        'xs': '425px',
+        'lg': '1025px',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

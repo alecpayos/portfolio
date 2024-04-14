@@ -22,9 +22,8 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"],
+      "definitions": ["./app/api/definitions.tsx"]
     }
   },
   "include": [

@@ -38,7 +38,9 @@ body {
       flex-col
       items-center
       justify-between
-      py-28;
+      py-16
+      md:mt-0
+      md:py-28;
   }
 
   .screen-header {
@@ -56,17 +58,58 @@ body {
     background-color: #35353C;
   }
 
+  .timeline-date {
+    @apply
+      bg-zinc-600
+      h-max
+      px-6
+      py-2
+      text-xl
+      font-semibold
+  }
+
+  .timeline-date-arrow {
+    @apply
+      w-0
+      h-0
+      border-[22px]
+      border-transparent
+      border-l-zinc-600
+  }
+
+  .timeline-stamp {
+    box-shadow: 0 0 16px 8px rgb(161 98 7);
+
+    @apply
+      w-[32px]
+      h-[32px]
+      bg-[#EFBF6B]
+      rounded-full
+  }
+
+  .timeline-border {
+    height: calc(100% - 54px);
+
+    @apply
+      border-l-4
+      w-1
+  }
+
   .card {
     @apply
       flex
       flex-col
-      p-8
-      rounded-2xl
+      p-4
+      md:p-8
       font-semibold
-      items-center;
+      items-center
+      w-[72px]
+      h-[96px]
+      rounded-md
+      md:rounded-2xl
+      md:w-[140px]
+      md:h-[186px];
 
-    width: 152px;
-    height: 186px;
     background-color: #3D3E42;
   }
 }
