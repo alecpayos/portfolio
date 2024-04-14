@@ -1,5 +1,4 @@
 import React from 'react'
-import { HeaderFont } from '../props'
 
 const ExperienceTimeline = ({
   year,
@@ -35,7 +34,7 @@ const ExperienceTimeline = ({
   );
 }
 
-export default function Experiences(headerFont: HeaderFont) {
+export default function Experiences({ headerFont }: { headerFont: string }) {
   const midExperience = [
     "Built multiple revenue increasing features utilizing the AWS ecosystem. From customer facing features to internal company tools as well as partner features and dashboards.",
     "Integrated and customized the open-source OHIF medical web viewer to alleviate the partner’s needs.",
