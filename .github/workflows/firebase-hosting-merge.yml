@@ -11,8 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: cd src && npm ci && npm run build
-      - run: mkdir release/out && cp -R src/out/* release/out/
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
