@@ -55,10 +55,10 @@ const SkillSections = () => {
   })
 }
 
-export default function Skills({ headerFont }: { headerFont: string }) {
+export default function Skills() {
   return (
     <div className='screen screen-primary min-w-[320px]'>
-      <h1 className={`!text-5xl screen-header ${headerFont}`}>MY SKILLS</h1>
+      <h1 className="mt-10 !text-5xl screen-header">Technologies</h1>
       <SkillSections />
     </div>
   )

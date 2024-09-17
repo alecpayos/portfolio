@@ -27,6 +27,9 @@
       ],
       "definitions": [
         "./app/api/definitions.tsx"
+      ],
+      "types": [
+        "./app/types.ts"
       ]
     }
   },

@@ -2,15 +2,15 @@ import Image from 'next/image'
 import { projectPreviews } from 'definitions'
 import Icons from '../assets'
 
-const PreviewTemplate = ({ project } : { project: any }) => {
+const PreviewTemplate = ({ project, headerFont } : { project: any, headerFont: string }) => {
   const { misc: { chainLinkIcon } } = Icons;
   const urlText = project.link.split('/')[2];
   const bg = project.index % 2 == 0 ? 'screen-primary' : 'screen-secondary';
   const reverse = project.index % 2 == 0 ? 'lg:flex-row' : 'lg:flex-row-reverse';
 
   return (
-    <div className={`screen ${bg} !justify-start`}>
-      <h1 className={`!text-4xl text-center lg:!text-5xl screen-header mb-4 ${project.headerFont}`}>{project.name}</h1>
+    <div className={`screen ${bg} !justify-center`}>
+      <h1 className={`!text-4xl text-center lg:!text-5xl screen-header mb-4 ${headerFont}`}>{project.name}</h1>
 
       <section className={`${reverse} flex items-center flex-col mt-4 px-8 lg:gap-8 lg:px-24 lg:mt-16`}>
         <div className="w-full flex flex-col items-center me-4 lg:w-7/12">
@@ -35,12 +35,12 @@ const PreviewTemplate = ({ project } : { project: any }) => {
   );
 }
 
-export default function Projects() {
+export default function Projects({ headerFont } : { headerFont: string }) {
   return Object.values(projectPreviews)
     .sort((a: any, b: any) => b.date - a.date)
     .map((project: any, index) => {
       project.index = index;
 
-      return <PreviewTemplate key={index} project={project}></PreviewTemplate>
+      return <PreviewTemplate headerFont={headerFont} key={index} project={project}></PreviewTemplate>
     });
 }
