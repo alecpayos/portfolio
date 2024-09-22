@@ -32,14 +32,17 @@ export default function Header() {
     <div className={`
       fixed
       w-full
-      h-20
+      h-28
       flex
+      flex-wrap
       z-20
       justify-center
       items-center
       screen-primary
       shadow-md
       shadow-zinc-950
+
+      sm:h-20
     `}>
       {renderNavButtons(path)}
     </div>

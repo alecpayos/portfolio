@@ -57,7 +57,7 @@ const SkillSections = () => {
 
 export default function Skills() {
   return (
-    <div className='screen screen-primary min-w-[320px]'>
+    <div className='screen screen-primary min-w-[320px] !pt-28 md:pt-0'>
       <h1 className="mt-10 !text-5xl screen-header">Technologies</h1>
       <SkillSections />
     </div>

@@ -13,9 +13,10 @@ export default function Hero() {
       items-center
       justify-center
       screen-primary
-      py-16
+      py-40
       min-w-[320px]
 
+      sm:py-32
       lg:flex-row
       lg:py-24
       xl:py-0

@@ -75,7 +75,7 @@ const projectPreviews: any = {
     date: 2024,
     name: "Denimstein",
     preview: denimsteinPreview,
-    alt: 'The World RPG Preview',
+    alt: 'Denimstein Product Page Preview',
     link: "https://denimstein.web.app/",
     child: <Denimstein />,
     inspo: `
@@ -89,7 +89,7 @@ const projectPreviews: any = {
 
   twrpgPreview: {
     date: 2024,
-    name: "The World RPG",
+    name: "The World RPG Guidebook",
     preview: twrpgPreview,
     alt: 'The World RPG Preview',
     link: "https://amnp-twrpg.web.app",

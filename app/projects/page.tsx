@@ -36,11 +36,17 @@ const PreviewTemplate = ({ project, headerFont } : { project: any, headerFont: s
 }
 
 export default function Projects({ headerFont } : { headerFont: string }) {
-  return Object.values(projectPreviews)
+  const views = Object.values(projectPreviews)
     .sort((a: any, b: any) => b.date - a.date)
     .map((project: any, index) => {
       project.index = index;
 
       return <PreviewTemplate headerFont={headerFont} key={index} project={project}></PreviewTemplate>
     });
+
+  return (
+    <main className='pt-20 md:pt-0'>
+      {views}
+    </main>
+  );
 }
