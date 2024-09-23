@@ -1,8 +1,14 @@
-import Image from 'next/image';
-import { projectPreviews } from 'definitions';
-import Icons from '../assets';
+'use client';
 
-const PreviewTemplate = ({ project, headerFont } : { project: any, headerFont: string }) => {
+import { useContext } from 'react';
+import { projectPreviews } from 'definitions';
+
+import Image from 'next/image';
+import Icons from '../assets';
+import FontContext from 'contexts/FontContextProvider';
+
+const PreviewTemplate = ({ project } : { project: any }) => {
+  const headerFont = useContext(FontContext);
   const { misc: { chainLinkIcon } } = Icons;
   const urlText = project.link.split('/')[2];
   const bg = project.index % 2 == 0 ? 'screen-primary' : 'screen-secondary';
@@ -10,7 +16,7 @@ const PreviewTemplate = ({ project, headerFont } : { project: any, headerFont: s
 
   return (
     <div className={`screen ${bg} !justify-center`}>
-      <h1 className={`!text-4xl text-center lg:!text-5xl screen-header mb-4 ${headerFont}`}>{project.name}</h1>
+      <h1 className={`!text-4xl text-center lg:!text-5xl screen-header mb-4 ${headerFont.className}`}>{project.name}</h1>
 
       <section className={`${reverse} flex items-center flex-col mt-4 px-8 lg:gap-8 lg:px-24 lg:mt-16`}>
         <div className="w-full flex flex-col items-center me-4 lg:w-7/12">
@@ -35,13 +41,13 @@ const PreviewTemplate = ({ project, headerFont } : { project: any, headerFont: s
   );
 };
 
-export default function Projects({ headerFont } : { headerFont: string }) {
+export default function Projects() {
   const views = Object.values(projectPreviews)
     .sort((a: any, b: any) => b.date - a.date)
     .map((project: any, index) => {
       project.index = index;
 
-      return <PreviewTemplate headerFont={headerFont} key={index} project={project}></PreviewTemplate>
+      return <PreviewTemplate key={index} project={project}></PreviewTemplate>
     });
 
   return (

@@ -4,7 +4,7 @@ import { Inika } from 'next/font/google';
 import { ReactNode, createContext } from 'react';
 
 const inika = Inika({ weight: "400", subsets: ["latin"]});
-const FontContext = createContext({});
+const FontContext = createContext(inika);
 
 export const FontContextProvider = ({ children } : { children: ReactNode }) => {
   return (

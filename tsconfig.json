@@ -30,6 +30,9 @@
       ],
       "types": [
         "./app/types.ts"
+      ],
+      "contexts/*": [
+        "./app/context/*"
       ]
     }
   },
