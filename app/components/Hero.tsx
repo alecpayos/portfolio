@@ -3,7 +3,7 @@ import React from "react"
 import Icons from "../assets"
 
 export default function Hero() {
-  const { misc, versionControlIcons } = Icons
+  const { misc, versionControlIcons } = Icons;
 
   return (
     <div className="
@@ -13,9 +13,10 @@ export default function Hero() {
       items-center
       justify-center
       screen-primary
-      py-16
+      py-40
       min-w-[320px]
 
+      sm:py-32
       lg:flex-row
       lg:py-24
       xl:py-0
@@ -67,5 +68,5 @@ export default function Hero() {
         <span className="flex items-center mb-2 xl:mb-4"><Image src={misc.googleMapsIcon.icon} alt={misc.googleMapsIcon.alt} className="w-8 h-8 me-6" /> 75 Real St. Tacloban City, Leyte</span>
       </section>
     </div>
-  )
+  );
 }

@@ -112,4 +112,15 @@ body {
 
     background-color: #3D3E42;
   }
+
+  .header-button {
+    @apply
+      font-medium
+      hover:bg-gray-600
+      h-max
+      px-5
+      py-2
+      mx-2
+      rounded-lg
+  }
 }

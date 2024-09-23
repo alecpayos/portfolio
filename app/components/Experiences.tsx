@@ -32,9 +32,9 @@ const ExperienceTimeline = ({
       </div>
     </section>
   );
-}
+};
 
-export default function Experiences({ headerFont }: { headerFont: string }) {
+export default function Experiences() {
   const midExperience = [
     "Built multiple revenue increasing features utilizing the AWS ecosystem. From customer facing features to internal company tools as well as partner features and dashboards.",
     "Integrated and customized the open-source OHIF medical web viewer to alleviate the partner’s needs.",
@@ -54,15 +54,15 @@ export default function Experiences({ headerFont }: { headerFont: string }) {
 
   const freelanceExp = [
     "Developed a static web app and used Figma for designs. Was coded using barebones HTML, CSS and JavaScript as part of the acceptance criteria.",
-  ]
+  ];
 
   return (
     <div className="screen min-w-[320px] sm:!items-start md:!items-center screen-secondary">
-      <h1 className={`!text-5xl !self-center screen-header mb-8 md:mb-16 ${headerFont}`}>Experiences</h1>
+      <h1 className="!text-5xl !self-center screen-header mb-8 md:mb-16">Experiences</h1>
 
       <ExperienceTimeline year={2022} title='Mid-Level Web Developer' company='Wend PH Inc, Cebu' description={midExperience} />
       <ExperienceTimeline year={2020} title='Junior Web Developer' company='Wend PH Inc, Cebu' description={juniorExperience} />
       <ExperienceTimeline year={2019} title='Freelance Web Developer' company='Tacloban' description={freelanceExp} />
     </div>
-  )
+  );
 }

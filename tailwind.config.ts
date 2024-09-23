@@ -22,5 +22,12 @@ const config: Config = {
     },
   },
   plugins: [],
+  safelist: [
+    'text-yellow-400',
+    'text-yellow-500',
+    'shadow-md',
+    'shadow-zinc-950',
+  ],
 };
+
 export default config;

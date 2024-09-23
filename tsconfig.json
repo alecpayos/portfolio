@@ -27,6 +27,12 @@
       ],
       "definitions": [
         "./app/api/definitions.tsx"
+      ],
+      "types": [
+        "./app/types.ts"
+      ],
+      "contexts/*": [
+        "./app/context/*"
       ]
     }
   },

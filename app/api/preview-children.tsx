@@ -18,7 +18,7 @@ const Denimstein = () => {
       </ol>
     </>
   );
-}
+};
 
 const TheWorldRPG = () => {
   return (
@@ -33,13 +33,13 @@ const TheWorldRPG = () => {
       </ol>
     </>
   );
-}
+};
 
 const OhifBase = () => {
   return (
     <></>
   );
-}
+};
 
 const OhifCustomMpr = () => {
   return (
@@ -53,7 +53,7 @@ const OhifCustomMpr = () => {
       </ol>
     </>
   );
-}
+};
 
 const SpeccUp = () => {
   return (
@@ -73,7 +73,7 @@ const SpeccUp = () => {
       </ol>
     </>
   );
-}
+};
 
 const GrabADrink = () => {
   return (
@@ -93,7 +93,7 @@ const GrabADrink = () => {
       </ol>
     </>
   );
-}
+};
 
 export {
   SpeccUp,
@@ -102,4 +102,4 @@ export {
   TheWorldRPG,
   OhifBase,
   OhifCustomMpr,
-}
+};
