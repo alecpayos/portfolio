@@ -32,7 +32,7 @@ const ExperienceTimeline = ({
       </div>
     </section>
   );
-}
+};
 
 export default function Experiences() {
   const midExperience = [
@@ -54,7 +54,7 @@ export default function Experiences() {
 
   const freelanceExp = [
     "Developed a static web app and used Figma for designs. Was coded using barebones HTML, CSS and JavaScript as part of the acceptance criteria.",
-  ]
+  ];
 
   return (
     <div className="screen min-w-[320px] sm:!items-start md:!items-center screen-secondary">
@@ -64,5 +64,5 @@ export default function Experiences() {
       <ExperienceTimeline year={2020} title='Junior Web Developer' company='Wend PH Inc, Cebu' description={juniorExperience} />
       <ExperienceTimeline year={2019} title='Freelance Web Developer' company='Tacloban' description={freelanceExp} />
     </div>
-  )
+  );
 }

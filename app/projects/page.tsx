@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import { projectPreviews } from 'definitions'
-import Icons from '../assets'
+import Image from 'next/image';
+import { projectPreviews } from 'definitions';
+import Icons from '../assets';
 
 const PreviewTemplate = ({ project, headerFont } : { project: any, headerFont: string }) => {
   const { misc: { chainLinkIcon } } = Icons;
@@ -33,7 +33,7 @@ const PreviewTemplate = ({ project, headerFont } : { project: any, headerFont: s
       </section>
     </div>
   );
-}
+};
 
 export default function Projects({ headerFont } : { headerFont: string }) {
   const views = Object.values(projectPreviews)

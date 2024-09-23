@@ -29,4 +29,5 @@ const config: Config = {
     'shadow-zinc-950',
   ],
 };
+
 export default config;

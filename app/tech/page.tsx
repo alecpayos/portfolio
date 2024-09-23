@@ -1,11 +1,6 @@
 import Icons from '../assets';
 import Image from 'next/image';
-
-type Icon = {
-  icon: any,
-  alt: string
-  link: string
-}
+import { Icon } from 'types';
 
 const Card = ({ icon, alt, link }: Icon) => {
   return (
@@ -13,17 +8,17 @@ const Card = ({ icon, alt, link }: Icon) => {
       <Image src={icon} alt={alt} className='w-8 h-8 md:w-16 md:h-16' />
       <p className='text-center text-xs md:text-md leading-4'>{alt}</p>
     </a>
-  )
-}
+  );
+};
 
 const SectionCategory = ({ iconObjects }: any) => {
-  const icons = Object.values(iconObjects)
+  const icons = Object.values(iconObjects);
   const length = 
     icons.length == 1 ? 'md:grid-cols-1' 
     : icons.length == 2 ? 'md:grid-cols-2'
     : icons.length == 3 ? 'md:grid-cols-3'
     : icons.length == 4 ? 'md:grid-cols-4'
-    : 'md:grid-cols-5'
+    : 'md:grid-cols-5';
 
   return (
     <div className={`grid grid-cols-3 xs:grid-cols-4 ${length} gap-4`}>
@@ -31,8 +26,8 @@ const SectionCategory = ({ iconObjects }: any) => {
         return <Card key={index} icon={icon} alt={alt} link={link} />
       })}
     </div>
-  )
-}
+  );
+};
 
 const SkillSections = () => {
   const sectionHeaders = [
@@ -43,7 +38,7 @@ const SkillSections = () => {
     { iconObject: Icons.databaseIcons, header: 'Databases'},
     { iconObject: Icons.projectManagementIcons, header: 'Project Management'},
     { iconObject: Icons.operatingSystemIcons, header: 'Operating Systems'},
-  ]
+  ];
 
   return sectionHeaders.map(({ iconObject, header }, index: number) => {
     return (
@@ -52,8 +47,8 @@ const SkillSections = () => {
         <SectionCategory iconObjects={iconObject} />
       </section>
     )
-  })
-}
+  });
+};
 
 export default function Skills() {
   return (
@@ -61,5 +56,5 @@ export default function Skills() {
       <h1 className="mt-10 !text-5xl screen-header">Technologies</h1>
       <SkillSections />
     </div>
-  )
+  );
 }

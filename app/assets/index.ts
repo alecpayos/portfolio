@@ -1,5 +1,4 @@
 // MISC ICONS
-
 import googleIcon from './misc/google-icon.svg';
 import googleMapsIcon from './misc/google-maps.svg';
 import icons8PhoneIcon from './misc/icons8-phone.svg';
@@ -44,10 +43,10 @@ import trelloIcon from './tech-stack-icons/trello.svg';
 import typescriptIcon from './tech-stack-icons/typescript-icon.svg';
 import ubuntuIcon from './tech-stack-icons/ubuntu.svg';
 import vueIcon from './tech-stack-icons/vue.svg';
-import modpackIcons from './hobbies/minecraft-modpacks';
 
 // DEFINITIONS
 
+// MISC
 const misc = {
   googleIcon: { icon: googleIcon, alt: "Google Email Icon" },
   googleMapsIcon: { icon: googleMapsIcon, alt: "Google Maps Icon" },
@@ -56,7 +55,7 @@ const misc = {
   chainLinkIcon: { icon: chainLinkIcon, alt: "Chain Link Icon" },
   chevronLeftDouble: { icon: chevronLeftDouble, alt: "Chevron Left Double Icon" },
   chevronRightDouble: { icon: chevronRightDouble, alt: "Chevron Right Double Icon" },
-}
+};
 
 // TECH IMAGE AND ICON GROUPINGS
 const languageAndFrameworksIcons = {
@@ -71,7 +70,7 @@ const languageAndFrameworksIcons = {
   phpIcon: { icon: phpIcon, alt: "PHP", link: "https://www.php.net/" },
   pythonIcon: { icon: pythonIcon, alt: "Python", link: "https://www.python.org/" },
   typescriptIcon: { icon: typescriptIcon, alt: "TypeScript", link: "https://www.typescriptlang.org/" },
-}
+};
 
 const awsIcons = {
   awsCloudfrontIcon: { icon: awsCloudfrontIcon, alt: "AWS CloudFront", link: "https://aws.amazon.com/cloudfront/" },
@@ -83,38 +82,38 @@ const awsIcons = {
   awsCloudformationIcon: { icon: awsCloudformationIcon, alt: "AWS Cloud Formation", link: "https://aws.amazon.com/cloudformation/" },
   awsCloudwatchIcon: { icon: awsCloudwatchIcon, alt: "AWS CloudWatch", link: "https://aws.amazon.com/cloudwatch/" },
   awsIcon: { icon: awsIcon, alt: "AWS", link: "https://aws.amazon.com/free/" },
-}
+};
 
 const versionControlIcons = {
   bitbucketIcon: { icon: bitbucketIcon, alt: "Bitbucket", link: "https://bitbucket.org/product" },
   gitIcon: { icon: gitIcon, alt: "Git CLI", link: "https://git-scm.com/" },
   githubIcon: { icon: githubIcon, alt: "Github", link: "https://github.com/" },
   gitlabIcon: { icon: gitlabIcon, alt: "Gitlab", link: "https://about.gitlab.com/" },
-}
+};
 
 const designFrameworksIcons = {
   antDesignIcon: { icon: antDesignIcon, alt: "Ant Design", link: "https://ant.design/" },
   bootstrapIcon: { icon: bootstrapIcon, alt: "Bootstrap 5", link: "https://getbootstrap.com/docs/5.3/getting-started/introduction/" },
   cssIcon: { icon: cssIcon, alt: "CSS 3", link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
   materialUiIcon: { icon: materialUiIcon, alt: "MaterialUI", link: "https://mui.com/" },
-}
+};
 
 const databaseIcons = {
   mysqlIcon: { icon: mysqlIcon, alt: "MySQL", link: "https://www.mysql.com/" },
   postgresqlIcon: { icon: postgresqlIcon, alt: "PostgreSQL", link: "https://www.postgresql.org/" },
-}
+};
 
 const projectManagementIcons = {
   figmaIcon: { icon: figmaIcon, alt: "Figma", link: "https://www.figma.com/" },
   slackIcon: { icon: slackIcon, alt: "Slack", link: "https://slack.com/" },
   trelloIcon: { icon: trelloIcon, alt: "Trello", link: "https://trello.com/" },
-}
+};
 
 const operatingSystemIcons = {
   appleIcon: { icon: appleIcon, alt: "MacOS Icon", link: "https://www.apple.com/ph/macos/sonoma/" },
   microsoftWindowsIcon: { icon: microsoftWindowsIcon, alt: "Windows", link: "https://www.microsoft.com/en-ph/windows?r=1" },
   ubuntuIcon: { icon: ubuntuIcon, alt: "Ubuntu", link: "https://ubuntu.com/" },
-}
+};
 
 // MASTER OBJECT
 const Icons = {
@@ -128,4 +127,4 @@ const Icons = {
   operatingSystemIcons,
 }
 
-export default Icons
+export default Icons;

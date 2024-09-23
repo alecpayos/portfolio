@@ -102,8 +102,8 @@ const projectPreviews: any = {
       a backend or database service for it.
     `,
   },
-}
+};
 
 export {
   projectPreviews
-}
+};
