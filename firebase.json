@@ -20,7 +20,7 @@
   ],
   "hosting": {
     "site": "amnp",
-    "public": "release/out",
+    "public": "build/client",
     "ignore": [
       "firebase.json",
       "**/.*",
